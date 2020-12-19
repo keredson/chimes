@@ -12,6 +12,47 @@ Click [here](https://youtu.be/6GucSdeh5fI) or the image below.
 
 [![Chimes playing 'Silent Night'"](http://img.youtube.com/vi/6GucSdeh5fI/0.jpg)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
 
+Parts
+-----
+- [3/8" steel rod](https://www.homedepot.com/p/3-8-in-x-48-in-Plain-Steel-Round-Rod-801597/204273966)
+- [#8 Nuts](https://www.homedepot.com/p/Everbilt-8-32-Zinc-Plated-Machine-Screw-Nut-100-Pack-800252/204273373)
+- [1/2 in. x 10 ft. Copper Type M Pipe](https://www.homedepot.com/p/Cerro-1-2-in-x-10-ft-Copper-Type-M-Hard-Temper-Straight-Pipe-1-2-M-10/100354198)
+- [Springs](https://amzn.to/3h4naSZ)
+- [Wood beads](https://amzn.to/3h4RPQa)
+- [5V regulator](https://amzn.to/37yTkTy)
+- [Battery charger circuit](https://amzn.to/38i1DCt)
+- [Motor drivers](https://amzn.to/2KKibus)
+- [18650 batteries](https://amzn.to/3hba7iQ) (Amazon doesn't seem to sell these directly, but they have these "flashlights" packages. =)
+- [Barrel jack power connector](https://amzn.to/3mAEZdm)
+- [Charger](https://amzn.to/3r7OgNP)
+- [Battery holders](https://amzn.to/37zQsGc)
+- [Wooden dowels](https://amzn.to/2Kooy79)
+- [Magnet wire](https://amzn.to/34u02sd)
+- [OLED display](https://amzn.to/3rbWZP1)
+- [Power switch](https://amzn.to/34rKfKe)
+- [ESP-32 microcontroller](https://amzn.to/3mCeJzv)
+- [Thread](https://amzn.to/3h3diJ4)
+- Wood!
+
+Tools I Used
+------------
+Use what you have around, this is just what I used.
+
+- [Chisel set](https://amzn.to/3r7Otk5)
+- [Pipe cutter](https://www.homedepot.com/p/Husky-5-8-in-Junior-Tube-Cutter-80-511-111/304384093)
+- [Metal ruler](https://www.homedepot.com/p/Empire-36-in-Aluminum-Straight-Edge-Ruler-403/100185157) (for accuracy)
+- [Mortiser](https://amzn.to/3pbRD4e) (Total overkill / recent present to myself - a drill press or hand tools will work as well.)
+- [Table saw](https://www.homedepot.com/p/RIDGID-13-Amp-10-in-Professional-Cast-Iron-Table-Saw-R4520/309412843)
+- [Miter saw](https://www.homedepot.com/p/RIDGID-15-Amp-Corded-12-in-Dual-Bevel-Sliding-Miter-Saw-with-70-Deg-Miter-Capacity-and-LED-Cut-Line-Indicator-R4222/306939244)
+- [Tenoning Jig](https://www.grizzly.com/products/grizzly-tenoning-jig/h7583)
+- [Disc sander](https://www.harborfreight.com/12-inch-direct-drive-bench-top-disc-sander-43468.html)
+- [3D printer](https://amzn.to/37xKRjq)
+- [Planer](https://amzn.to/3h0KYr0)
+- [Center punch](https://amzn.to/2LRZKou)
+- [Chamfer/Countersink Bit Set](https://amzn.to/3h1kUvV)
+- [Sawmill](https://www.harborfreight.com/saw-mill-with-301cc-gas-engine-62366.html)
+
+
 Build
 -----
 This took me somewhere between 40-80 hours to design and build, starting with a "mandatory fun day" event at work.
@@ -39,6 +80,7 @@ and cut them accorting to [this guide](https://github.com/keredson/chimes/blob/m
 
 Drill and chamfer holes to hang them by at the hang points. 
 
+![](https://lh3.googleusercontent.com/YDM0wZWWXEzGWHSDlc7UokVF7G3O0Jza3JgTMc-lMDQUMaQPaSKbVKGBcvcrbw9oECdYWRfsjBy9yBXNu_bocG3p_KKaAMupYzF3oA-qDztEfaPTEFYPhXietcUvLVkrY1DrPFEUMKfz2IMUutrcxI8FjXG7BSIdtktH32D39q-5evdgCsKeZaJH_P1fv3uQFGqRNxWtoXPms6qqDXHQO5xiIB-eJXQQ81zXrcrSBCZcuRdYFmWUZ-rroZeolCDd7r-62mcqzpSgEjKHT7jiDURmObu1V1Z8jdCbj0u2JObQ_XlSHPf7sN5OzGz0sXe9vHzKM4YwgmGsUSRbDEGku0mrDV9Amt5mUdj37KGncT2wn_nmXMOK9nZAvRRb8-5vfMVK-0WyKYTEZoKb6U2urk-nreyLX-Uv8qIu7NjcXlYBiulIZpp4ZLOesWJ10nknfs1M6Yq289jd8gSQDuMioIbDSaL5A10WZl_X-XVeJYNRC9vcbT2khpomLK5hYqfACek11eqrNUDkm2mM-8VF70Bcrptxzjshd-GjjOZ0_Qa5bkDuQDPk52qp7GmIKKmpX6DWWGjNlcZZRf9TXtUYv4GOaQhirX8OFbDaZuKRGd5gEv-9wTojErzHlPRPax6T_koKhEf15HlDGZ7zOKhWMpxC6G7SsYoCiPkJmgriAOQ7tGzFhhGeD_ji61KKQg=w1259-h944-no?authuser=0)
 ![](https://lh3.googleusercontent.com/4Aah37UHJoQnF7-W3qiCbZ1fDhCEtQY2AUAwL_DzGhIMt65eno25DvUuPRrUdUPV9si5fBJ2mT4eyBBN4J12AbGI8JReuqvMPBJtIrj38j4bK_RbwhoDGTxCfu1Y_p2QlFxG7xxIC7xkaXZ0WNYRTSflaTsUDCur3IxCpXSnvMurdYbJhBtE9_l0KM-Px0FJs7FZgk93BlbLHjqDlOi7PzBFE_Gw7LTGTkbQCFevoKgnUcD15USL5NqrXqyG3gHzy473bEnpPGFbmUGCeaakxlZHbUFZE0tz96GzA9TXkITeMvT6Vdc2rfM2PuOXrTgmG7WD61xyBc5P4ODCXXylrjRC5UYhOwIpHHERE2pONPsS08DqC9AyjIjQj3FWbDVlhR0ImGi0y98b8rwqfYziG0s-PmRlJuvf8mrZFkOXjZnPzi3k9BZm1lzSRzexiaLtxFkj4lmQjyb_XJYy7gooQFeNC2EZC8T5iPCg0jplYT0hkn0IqXD4Y3HwaNihjCcZt1Gn79UrJmN17fgXT6fYaPwFrpCBTaRFO5y6tw4MtY-lO03O7OToaDQTXRo58j32b_UNt6q0dxufpxF3S3_hINbjuu1DNwKRH2WEhIPRjuNqGmKH--7rD9as7scCVaT_bfbiWTl6X4fhmb1-QT759jEtATiaJ2Scn0NfYxbgEWLIjAXwdpumOFKzKOyq6A=w1259-h944-no?authuser=0)
 
 Make the stand as you please.  I chose some pretty simple feet and through tenons.  
