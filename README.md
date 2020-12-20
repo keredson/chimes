@@ -1,7 +1,7 @@
 Holiday Chimes
 ==============
 
-This project is a battery powered musical chime set, loosly inspired by the 
+This project is a battery powered musical chime set, loosely inspired by the 
 [Ye Merry Minstrel Caroling Christmas Bells](https://www.amazon.com/Merry-Minstrel-Caroling-Christmas-Bells/dp/B00UEYG8JO)
 we had as kids.  Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
@@ -11,6 +11,13 @@ Watch it playing "Silent Night"
 Click [here](https://youtu.be/6GucSdeh5fI) or the image below.
 
 [![Chimes playing 'Silent Night'"](http://img.youtube.com/vi/6GucSdeh5fI/0.jpg)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
+
+I chose to implement these 12 notes (which cover a decent number of songs), but it can be extended as needed (up to the free GPIO pins):
+
+- C5, D, E, F, F#, G, A, B, C6, D, E, F
+
+I mapped C5 (and like) to C4 in software since an actual C4 chime didn't really sound like C4 due to secondary frequencies.  [This guide](http://leehite.org/Chimes.htm#Note%20Selection) was very useful to understand what's going on.
+
 
 Parts
 -----
@@ -144,4 +151,11 @@ OLED screen and [holder](https://github.com/keredson/chimes/blob/main/screen.sca
 Finish with Danish Oil.
 
 ![](https://lh3.googleusercontent.com/UWEwPMYoFBJvodTLpU2yBfvWy_XW6rrTQPCvBvf_aN_NG-EcuewwxTNHL3FMnrepiT8EfVQdC6uIpjlPDvCoQbGSh1ZYnfq4qoxAn-9iua27tLSnhUo-jl_1RiRfX5650OGYLGEHTbhiCkmsokeatdyRkjX8fPm5Ppf_B4l9qt7SIgIyVMg-kcrGskIxyChYR4OkJpQXGgAeUuBBJSF4FYYPEBaR3jMqYNizhluz5IitGY6lgivae2g5g3MgwEV_ID96y5P_2ObhQAjzNiWgu7-m1_5h4YGH2iF51kl8CccsSyIV4Hkl-whQJ-femYZ-iCN2hFMxWqPx__1bfZEldJVWq-7IGLCsCHndkvRTbEsWJYobGOwWqBfptyuCszxWnFthnD6pNTYwz3-CQ-I6eanwubBinAu7y-Xbyk_zWJUqXv92hrZlMoOHIn_5aP2iJdrqOo4AAzgTZdqShliV9pw340IE5jxJCmQOAWhKEpAGcGEyk1VxYZzdQg0pZBW8qLKKo1Cd-Hi8SzHoGeQyKxP0ZKMo5RiD5N-l8tH0RwEQmh7XMYDhPs9Y43_2FBXY4F07LZx-24204WDVGUSZM7eWt09k5LWp9It3Ra90G-OMPM-yiCW9EVfm1sptb73ESrgRg2J_OT5DLtlj1W69BNjFgnRpn6KGP_pn98irM9iPpMR8_AycQj4Z-i9NDQ=w1259-h944-no?authuser=0)
+
+Software
+--------
+
+The software uses regular MIDI files I whittled down in [LMMS](https://lmms.io/) to simple melodies.  I used a version of [Mido](https://github.com/mido/mido) I stripped down for memory reasons.  The ESP-32 runs [MicroPython](https://micropython.org/).
+
+The main code is in [main.py](https://github.com/keredson/chimes/blob/main/main.py).  It's MVP (but not much more).
 
