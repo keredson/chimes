@@ -154,6 +154,7 @@ Use what you have around, this is just what I used.
 - [Disc sander](https://www.harborfreight.com/12-inch-direct-drive-bench-top-disc-sander-43468.html)
 - [3D printer](https://amzn.to/37xKRjq)
 - [Planer](https://amzn.to/3h0KYr0)
+- [Jointer](https://www.homedepot.com/p/RIDGID-6-Amp-Corded-6-1-8-in-Jointer-Planer-JP0610/202269174)
 - [Center punch](https://amzn.to/2LRZKou)
 - [Chamfer/Countersink Bit Set](https://amzn.to/3h1kUvV)
 - [Sawmill](https://www.harborfreight.com/saw-mill-with-301cc-gas-engine-62366.html)
