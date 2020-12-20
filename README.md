@@ -2,7 +2,7 @@ Holiday Chimes
 ==============
 
 This project is a battery powered musical chime set, loosely inspired by the 
-[Ye Merry Minstrel Caroling Christmas Bells](https://amzn.to/3rfPTJp)
+*Ye Merry Minstrel Caroling Christmas Bells*
 we had as kids.  Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
 Watch it playing "Silent Night" 
@@ -17,47 +17,6 @@ I chose to implement these 12 notes (which cover a decent number of songs), but 
 - C5, D, E, F, F#, G, A, B, C6, D, E, F
 
 I mapped C5 (and like) to C4 in software since an actual C4 chime didn't really sound like C4 due to secondary frequencies.  [This guide](http://leehite.org/Chimes.htm#Note%20Selection) was very useful to understand what's going on.
-
-
-Parts
------
-- [3/8" steel rod](https://www.homedepot.com/p/3-8-in-x-48-in-Plain-Steel-Round-Rod-801597/204273966)
-- [#8 Nuts](https://www.homedepot.com/p/Everbilt-8-32-Zinc-Plated-Machine-Screw-Nut-100-Pack-800252/204273373)
-- [1/2 in. x 10 ft. Copper Type M Pipe](https://www.homedepot.com/p/Cerro-1-2-in-x-10-ft-Copper-Type-M-Hard-Temper-Straight-Pipe-1-2-M-10/100354198)
-- [Springs](https://amzn.to/3h4naSZ)
-- [Wood beads](https://amzn.to/3h4RPQa)
-- [5V regulator](https://amzn.to/37yTkTy)
-- [Battery charger circuit](https://amzn.to/38i1DCt)
-- [Motor drivers](https://amzn.to/2KKibus)
-- [18650 batteries](https://amzn.to/3hba7iQ) (Amazon doesn't seem to sell these directly, but they have these "flashlights" packages. =)
-- [Barrel jack power connector](https://amzn.to/3mAEZdm)
-- [Charger](https://amzn.to/3r7OgNP)
-- [Battery holders](https://amzn.to/37zQsGc)
-- [Wooden dowels](https://amzn.to/2Kooy79)
-- [Magnet wire](https://amzn.to/34u02sd)
-- [OLED display](https://amzn.to/3rbWZP1)
-- [Power switch](https://amzn.to/34rKfKe)
-- [ESP-32 microcontroller](https://amzn.to/3mCeJzv)
-- [Thread](https://amzn.to/3h3diJ4)
-- Wood!
-
-Tools I Used
-------------
-Use what you have around, this is just what I used.
-
-- [Chisel set](https://amzn.to/3r7Otk5)
-- [Pipe cutter](https://www.homedepot.com/p/Husky-5-8-in-Junior-Tube-Cutter-80-511-111/304384093)
-- [Metal ruler](https://www.homedepot.com/p/Empire-36-in-Aluminum-Straight-Edge-Ruler-403/100185157) (for accuracy)
-- [Mortiser](https://amzn.to/3pbRD4e) (Total overkill / recent present to myself - a drill press or hand tools will work as well.)
-- [Table saw](https://www.homedepot.com/p/RIDGID-13-Amp-10-in-Professional-Cast-Iron-Table-Saw-R4520/309412843)
-- [Miter saw](https://www.homedepot.com/p/RIDGID-15-Amp-Corded-12-in-Dual-Bevel-Sliding-Miter-Saw-with-70-Deg-Miter-Capacity-and-LED-Cut-Line-Indicator-R4222/306939244)
-- [Tenoning Jig](https://www.grizzly.com/products/grizzly-tenoning-jig/h7583)
-- [Disc sander](https://www.harborfreight.com/12-inch-direct-drive-bench-top-disc-sander-43468.html)
-- [3D printer](https://amzn.to/37xKRjq)
-- [Planer](https://amzn.to/3h0KYr0)
-- [Center punch](https://amzn.to/2LRZKou)
-- [Chamfer/Countersink Bit Set](https://amzn.to/3h1kUvV)
-- [Sawmill](https://www.harborfreight.com/saw-mill-with-301cc-gas-engine-62366.html)
 
 
 Build
@@ -158,4 +117,45 @@ Software
 The software uses regular MIDI files I whittled down in [LMMS](https://lmms.io/) to simple melodies.  I used a version of [Mido](https://github.com/mido/mido) I stripped down for memory reasons.  The ESP-32 runs [MicroPython](https://micropython.org/).
 
 The main code is in [main.py](https://github.com/keredson/chimes/blob/main/main.py).  It's MVP (but not much more).
+
+Parts
+-----
+- [3/8" steel rod](https://www.homedepot.com/p/3-8-in-x-48-in-Plain-Steel-Round-Rod-801597/204273966)
+- [#8 Nuts](https://www.homedepot.com/p/Everbilt-8-32-Zinc-Plated-Machine-Screw-Nut-100-Pack-800252/204273373)
+- [1/2 in. x 10 ft. Copper Type M Pipe](https://www.homedepot.com/p/Cerro-1-2-in-x-10-ft-Copper-Type-M-Hard-Temper-Straight-Pipe-1-2-M-10/100354198)
+- [Springs](https://amzn.to/3h4naSZ)
+- [Wood beads](https://amzn.to/3h4RPQa)
+- [5V regulator](https://amzn.to/37yTkTy)
+- [Battery charger circuit](https://amzn.to/38i1DCt)
+- [Motor drivers](https://amzn.to/2KKibus)
+- [18650 batteries](https://amzn.to/3hba7iQ) (Amazon doesn't seem to sell these directly, but they have these "flashlights" packages. =)
+- [Barrel jack power connector](https://amzn.to/3mAEZdm)
+- [Charger](https://amzn.to/3r7OgNP)
+- [Battery holders](https://amzn.to/37zQsGc)
+- [Wooden dowels](https://amzn.to/2Kooy79)
+- [Magnet wire](https://amzn.to/34u02sd)
+- [OLED display](https://amzn.to/3rbWZP1)
+- [Power switch](https://amzn.to/34rKfKe)
+- [ESP-32 microcontroller](https://amzn.to/3mCeJzv)
+- [Thread](https://amzn.to/3h3diJ4)
+- Wood!
+
+Tools I Used
+------------
+Use what you have around, this is just what I used.
+
+- [Chisel set](https://amzn.to/3r7Otk5)
+- [Pipe cutter](https://www.homedepot.com/p/Husky-5-8-in-Junior-Tube-Cutter-80-511-111/304384093)
+- [Metal ruler](https://www.homedepot.com/p/Empire-36-in-Aluminum-Straight-Edge-Ruler-403/100185157) (for accuracy)
+- [Mortiser](https://amzn.to/3pbRD4e) (Total overkill / recent present to myself - a drill press or hand tools will work as well.)
+- [Table saw](https://www.homedepot.com/p/RIDGID-13-Amp-10-in-Professional-Cast-Iron-Table-Saw-R4520/309412843)
+- [Miter saw](https://www.homedepot.com/p/RIDGID-15-Amp-Corded-12-in-Dual-Bevel-Sliding-Miter-Saw-with-70-Deg-Miter-Capacity-and-LED-Cut-Line-Indicator-R4222/306939244)
+- [Tenoning Jig](https://www.grizzly.com/products/grizzly-tenoning-jig/h7583)
+- [Disc sander](https://www.harborfreight.com/12-inch-direct-drive-bench-top-disc-sander-43468.html)
+- [3D printer](https://amzn.to/37xKRjq)
+- [Planer](https://amzn.to/3h0KYr0)
+- [Center punch](https://amzn.to/2LRZKou)
+- [Chamfer/Countersink Bit Set](https://amzn.to/3h1kUvV)
+- [Sawmill](https://www.harborfreight.com/saw-mill-with-301cc-gas-engine-62366.html)
+
 
