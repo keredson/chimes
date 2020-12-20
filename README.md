@@ -62,7 +62,7 @@ Use what you have around, this is just what I used.
 
 Build
 -----
-This took me somewhere between 40-80 hours to design and build, starting with a "mandatory fun day" event at work.
+This took me somewhere between 40-80 hours to design, code and build, starting with a "mandatory fun day" event at work.
 
 Get some wood.  This is some black walnut I slabbed a year or two ago:
 
