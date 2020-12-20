@@ -2,7 +2,7 @@ Holiday Chimes
 ==============
 
 This project is a battery powered musical chime set, loosely inspired by the 
-[Ye Merry Minstrel Caroling Christmas Bells](https://www.amazon.com/Merry-Minstrel-Caroling-Christmas-Bells/dp/B00UEYG8JO)
+[Ye Merry Minstrel Caroling Christmas Bells](https://amzn.to/3rfPTJp)
 we had as kids.  Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
 Watch it playing "Silent Night" 
