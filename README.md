@@ -14,7 +14,7 @@ Built with a black walnut stand using copper tubing, 3d-printed hangers and cont
 Watch it playing "Silent Night" 
 -------------------------------
 
-Click [here](https://youtu.be/6GucSdeh5fI) or the image below.
+Click [here](https://youtu.be/6GucSdeh5fI) (or the image below) to watch it in action.
 
 [![Chimes playing 'Silent Night'"](http://img.youtube.com/vi/6GucSdeh5fI/0.jpg)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
 
