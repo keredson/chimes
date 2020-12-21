@@ -6,8 +6,8 @@ electro-mechanical real bells we had as kids, I think the
 *Ye Merry Minstrel Caroling Christmas Bells*.  Other similar products had light-up bell decorations with a speaker,
 like the *Caroling Christmas Bells* or *Mr Christmas Bells of Christmas* (but weren't real bells).
 
-I could not find a source of musical bells reasonably priced for this project, so I've swapped them out
-with DIY chimes, which worked quite nicely IMO.
+I wanted to recreate, but could not find a source of bells reasonably priced for this project.  So I substituted 
+DIY chimes, which worked quite nicely IMO.
 
 Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
