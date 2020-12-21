@@ -1,9 +1,15 @@
-Holiday Chimes
-==============
+Musical Christmas Bells / Chimes
+================================
 
-This project is a battery powered musical chime set, loosely inspired by the 
-*Ye Merry Minstrel Caroling Christmas Bells*
-we had as kids.  Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
+This project is a battery powered musical chime set, loosely inspired by a set of microprocessor controlled
+electro-mechanical real bells we had as kids, I think the
+*Ye Merry Minstrel Caroling Christmas Bells*.  Other similar products had light-up bell decorations with a speaker,
+like the *Caroling Christmas Bells* or *Mr Christmas Bells of Christmas* (but weren't real bells).
+
+I could not find a source of musical bells reasonably priced for this project, so I've swapped them out
+with DIY chimes, which worked quite nicely IMO.
+
+Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
 Watch it playing "Silent Night" 
 -------------------------------
