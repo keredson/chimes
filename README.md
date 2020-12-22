@@ -166,3 +166,12 @@ Use what you have around, this is just what I used.
 - [Sawmill](https://www.harborfreight.com/saw-mill-with-301cc-gas-engine-62366.html)
 
 
+Future Work
+-----------
+The strikers return to their default position via gravity.  This is not reliable.  Sometimes they don't return at all due to friction, or they return part-way, resulting in the next strike being less effective.  I'm working on a redesign w/ springs and a wider swing arc.  This should make the chimes more consistent, and possibly allow harder strikes, variable intensity strikes, etc.
+
+The ESP-32 has wifi.  I want to be able to control this over mobile.
+
+Memory is very tight.  MicroPython supports baking in large libraries into the firmware to save memory.  (Their equivalent of `.pyc` files can be run directly from flash according to documentation.)  Figure out how to do this and create a custom firmware.
+
+Be able to check and display battery voltage / % used.
