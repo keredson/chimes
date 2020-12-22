@@ -23,6 +23,8 @@ touch_right = TouchPad(touch_right_pin)
 #touch_left.config(800)
 #touch_middle.config(800)
 #touch_right.config(800)
+MA_RATE = .98
+CLICK_THRESHOLD = .5
 
 # touch0.config(600)  # I think 0 is default sensitivity and higher is less sensitive
 # touch0.read()
@@ -94,6 +96,9 @@ class Chimes(object):
     self.test()
 #    from rotary_irq_esp import RotaryIRQ
 #    RotaryIRQ(pin_num_clk=16, pin_num_dt=17, pin_num_sw=5, min_val=0, max_val=10, reverse=False, range_mode=RotaryIRQ.RANGE_WRAP, rotary_callback=lambda x: print('v:', x), sw_callback=lambda: print('s:'))
+    self.touch_left_ma = 800
+    self.touch_middle_ma = 800
+    self.touch_right_ma = 800
     tim = machine.Timer(-1)
     tim.init(period=200, mode=machine.Timer.PERIODIC, callback=lambda t:self.check_touch())
     
@@ -113,10 +118,23 @@ class Chimes(object):
       time.sleep(.4)
     
   def check_touch(self):
-    #print(touch_left.read(), touch_middle.read(), touch_right.read())
-    if touch_left.read() < 160: return self.button_press('left')
-    if touch_middle.read() < 120: return self.button_press('middle')
-    if touch_right.read() < 150: return self.button_press('right')
+    touch_left_now = touch_left.read()
+    touch_middle_now = touch_middle.read()
+    touch_right_now = touch_right.read()
+    touch_left_pct = touch_left_now / self.touch_left_ma
+    touch_middle_pct = touch_middle_now / self.touch_middle_ma
+    touch_right_pct = touch_right_now / self.touch_right_ma
+#    print(touch_left_now, touch_left_pct, self.touch_left_ma, '\t', touch_middle_now, touch_middle_pct, self.touch_middle_ma, '\t', touch_right_now, touch_right_pct, self.touch_right_ma)
+    self.touch_left_ma = self.touch_left_ma*MA_RATE + touch_left_now*(1-MA_RATE)
+    self.touch_middle_ma = self.touch_middle_ma*MA_RATE + touch_middle_now*(1-MA_RATE)
+    self.touch_right_ma = self.touch_right_ma*MA_RATE + touch_right_now*(1-MA_RATE)
+
+    if touch_left_pct<CLICK_THRESHOLD and touch_left_pct<touch_middle_pct and touch_left_pct<touch_right_pct:
+      return self.button_press('left')
+    if touch_middle_pct<CLICK_THRESHOLD and touch_middle_pct<touch_left_pct and touch_middle_pct<touch_right_pct:
+      return self.button_press('middle')
+    if touch_right_pct<CLICK_THRESHOLD and touch_right_pct<touch_left_pct and touch_right_pct<touch_middle_pct:
+      return self.button_press('right')
 
   
   def show_select(self):
