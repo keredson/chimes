@@ -26,7 +26,7 @@ Watch it playing "Silent Night"
 
 Click [here](https://youtu.be/6GucSdeh5fI) (or the image below) to watch it in action.
 
-[![Chimes playing 'Silent Night'"](http://img.youtube.com/vi/6GucSdeh5fI/0.jpg)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
+[![Chimes playing 'Silent Night'"](https://user-images.githubusercontent.com/2049665/102846468-e46e0a80-43c4-11eb-8fab-9f8495d76acb.png)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
 
 I chose to implement these 12 notes (which cover a decent number of songs), but it can be extended as needed (up to the free GPIO pins):
 
