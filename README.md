@@ -13,7 +13,7 @@ Built with a black walnut stand using copper tubing, 3d-printed hangers and cont
 
 Table of Contents
 -----------------
-- [Watch](#watch-it-playing-silent-night)
+- [Watch](#watch)
 - [Build](#build)
 - [Software](#software)
 - [Parts](#parts)
@@ -21,12 +21,15 @@ Table of Contents
 - [Future Work](#future-work)
 
 
-Watch it playing "Silent Night" 
--------------------------------
+Watch 
+-----
 
-Click [here](https://youtu.be/6GucSdeh5fI) (or the image below) to watch it in action.
+Some videos of it working:
 
 [![Chimes playing 'Silent Night'"](https://user-images.githubusercontent.com/2049665/102846468-e46e0a80-43c4-11eb-8fab-9f8495d76acb.png)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
+
+- [Silent Night](https://youtu.be/6GucSdeh5fI)
+- [The user interface](https://www.youtube.com/watch?v=E3LkCAIgiEA) (OLED display)
 
 I chose to implement these 12 notes (which cover a decent number of songs), but it can be extended as needed (up to the free GPIO pins):
 
