@@ -27,7 +27,7 @@ Watch
 
 Some videos of it working:
 
-[![Chimes playing 'Silent Night'"](https://user-images.githubusercontent.com/2049665/102846468-e46e0a80-43c4-11eb-8fab-9f8495d76acb.png)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
+[![Chimes playing 'Hark! The Herald Angels Sing'"](https://user-images.githubusercontent.com/2049665/102863432-7129c000-43e7-11eb-9e00-d44b76cc9770.png)](https://youtu.be/q78rXuhWD9I "Playing 'Hark! The Herald Angels Sing'")
 
 - [Silent Night](https://youtu.be/6GucSdeh5fI)
 - [Hark! The Herald Angels Sing](https://youtu.be/q78rXuhWD9I)
