@@ -11,6 +11,16 @@ DIY chimes, which worked quite nicely IMO.
 
 Built with a black walnut stand using copper tubing, 3d-printed hangers and controlled by an ESP32 running MicroPython.
 
+Table of Contents
+-----------------
+- [Watch](#watch-it-playing-silent-night)
+- [Build](#build)
+- [Software](#software)
+- [Parts](#parts)
+- [Tools](#tools-i-used)
+- [Future Work](#future-work)
+
+
 Watch it playing "Silent Night" 
 -------------------------------
 
