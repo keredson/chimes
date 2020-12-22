@@ -93,12 +93,13 @@ class Chimes(object):
     self.files = [('(Random Play)',self.random_play)] + [fn for fn in os.listdir() if fn.endswith('.mid')] + [('(Exit)',self.exit)]
     self.selected = 0
     self.state = State.SELECT
+    self.do_next = None
     self.test()
-#    from rotary_irq_esp import RotaryIRQ
-#    RotaryIRQ(pin_num_clk=16, pin_num_dt=17, pin_num_sw=5, min_val=0, max_val=10, reverse=False, range_mode=RotaryIRQ.RANGE_WRAP, rotary_callback=lambda x: print('v:', x), sw_callback=lambda: print('s:'))
     self.touch_left_ma = 800
     self.touch_middle_ma = 800
     self.touch_right_ma = 800
+    self.pause = False
+    self.exit = False
     tim = machine.Timer(-1)
     tim.init(period=200, mode=machine.Timer.PERIODIC, callback=lambda t:self.check_touch())
     
@@ -115,7 +116,7 @@ class Chimes(object):
     print('self test...')
     for note in Note.ALL:
       note.play()
-      time.sleep(.4)
+      time.sleep(.2)
     
   def check_touch(self):
     touch_left_now = touch_left.read()
@@ -158,7 +159,7 @@ class Chimes(object):
     oled.fill(0)
     oled.text(name, center(name), 4)
     oled.text(note, center(note), 14)
-    oled.text('pause', 0, 24)
+    oled.text('play' if self.pause else 'pause', 0, 24)
     oled.text('exit', 96, 24)
     oled.show()
   
@@ -167,6 +168,8 @@ class Chimes(object):
     print('playing', fn)
     display_name = fn[:-4]
     self.state = State.PLAY
+    self.pause = False
+    self.exit = False
 
     self.show_chime(display_name, 'Loading...')
 
@@ -176,6 +179,10 @@ class Chimes(object):
 
     started_at = time.time()
     for msg in mid.play():
+      if self.exit: break
+      while self.pause and not self.exit:
+        self.show_chime(display_name, 'Paused')
+    	time.sleep(.1)
       if msg.type=='note_on':
         note = Note.midi_note.get(msg.note)
         if note:
@@ -191,6 +198,14 @@ class Chimes(object):
     print('select')
     self.state = State.SELECT
     self.show_select()
+    
+  def wait(self):
+    while True:
+      if self.do_next:
+        do_next = self.do_next
+        self.do_next = None
+        do_next()
+      time.sleep(.1)
     
 
   def button_press(self, p):
@@ -208,27 +223,31 @@ class Chimes(object):
     elif p=='middle':
       fn = self.files[self.selected]
       if isinstance(fn, str):
-        self.play(fn, callback=self.select)
+        def f():
+          self.play(fn, callback=self.select)
+        self.do_next = f
       else:
-        fn[1]()
+        self.do_next = fn[1]
     
 
   def button_press_PLAY(self, p):
     print('button_press_PLAY', p)
+    if p=='left':
+      self.pause = not self.pause
+    elif p=='right':
+      self.exit = True
+    
 
   def run(self):
     self.select()
-#    time.sleep(1)
-#    self.play(self.files[1], callback=self.select)
+    self.wait()
 
 
 
 chimes = Chimes()
 
-#while True:
-#  print(touch_middle.read())
 
-# memory failues common
+# out of memory failues common
 gc.collect()
 print('gc.mem_free()', gc.mem_free())
 try:
