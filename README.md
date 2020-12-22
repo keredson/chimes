@@ -14,6 +14,7 @@ Built with a black walnut stand using copper tubing, 3d-printed hangers and cont
 Table of Contents
 -----------------
 - [Watch](#watch)
+- [Overview](#overview)
 - [Build](#build)
 - [Software](#software)
 - [Parts](#parts)
@@ -29,7 +30,12 @@ Some videos of it working:
 [![Chimes playing 'Silent Night'"](https://user-images.githubusercontent.com/2049665/102846468-e46e0a80-43c4-11eb-8fab-9f8495d76acb.png)](https://youtu.be/6GucSdeh5fI "Playing 'Silent Night'")
 
 - [Silent Night](https://youtu.be/6GucSdeh5fI)
+- [Hark! The Herald Angels Sing](https://youtu.be/q78rXuhWD9I)
+- [God Rest Ye Merry Gentlemen](https://youtu.be/Mc4dz5KQoJM)
 - [The user interface](https://www.youtube.com/watch?v=E3LkCAIgiEA) (OLED display)
+
+Overview
+--------
 
 I chose to implement these 12 notes (which cover a decent number of songs), but it can be extended as needed (up to the free GPIO pins):
 
