@@ -1,4 +1,4 @@
-import gc, os, time
+import gc, os, random, time
 
 import machine
 from machine import Pin, I2C, TouchPad
@@ -30,6 +30,10 @@ CLICK_THRESHOLD = .5
 # touch0.read()
 
 
+def shuffle(lst):
+  for i in range(len(lst)-1, 0, -1): 
+    j = random.randint(0, i + 1)  
+    lst[i], lst[j] = lst[j], lst[i]
 
 
 def center(msg):
@@ -90,7 +94,7 @@ class Chimes(object):
   
   def __init__(self):
     self.intro()
-    self.files = [('(Random Play)',self.random_play)] + [fn for fn in os.listdir() if fn.endswith('.mid')] + [('(Exit)',self.exit)]
+    self.files = [('(Random Play)',self.random_play)] + [fn for fn in os.listdir() if fn.endswith('.mid')] + [('(Test)',self.test)]
     self.selected = 0
     self.state = State.SELECT
     self.do_next = None
@@ -106,7 +110,15 @@ class Chimes(object):
     
   def random_play(self):
     print('random_play')
-    
+    self.show_centered('Shuffling...')
+    files = [fn for fn in self.files if isinstance(fn,str)]
+    print('files', files)
+    shuffle(files)
+    for fn in files:
+      if self.exit: break
+      self.play(fn)
+    self.select()
+
     
   def exit(self):
     print('exit')
@@ -114,9 +126,11 @@ class Chimes(object):
     
   def test(self):
     print('self test...')
+    self.show_centered('Testing...')
     for note in Note.ALL:
       note.play()
       time.sleep(.2)
+    self.select()
     
   def check_touch(self):
     touch_left_now = touch_left.read()
@@ -161,6 +175,11 @@ class Chimes(object):
     oled.text(note, center(note), 14)
     oled.text('play' if self.pause else 'pause', 0, 24)
     oled.text('exit', 96, 24)
+    oled.show()
+  
+  def show_centered(self, txt):
+    oled.fill(0)
+    oled.text(txt, center(txt), 12)
     oled.show()
   
   
