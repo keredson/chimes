@@ -43,6 +43,8 @@ I chose to implement these 12 notes (which cover a decent number of songs), but 
 
 I mapped C5 (and like) to C4 in software since an actual C4 chime didn't really sound like C4 due to secondary frequencies.  [This guide](http://leehite.org/Chimes.htm#Note%20Selection) was very useful to understand what's going on.
 
+I've simplified a number of MIDI files to play, available [here](https://github.com/keredson/chimes/tree/main/songs).
+
 
 Build
 -----
