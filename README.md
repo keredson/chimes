@@ -1,3 +1,5 @@
+Made front pages of [Hackaday](https://hackaday.com/2020/12/24/ringing-in-the-holidays-with-self-playing-chimes/) and [Hacker News](https://news.ycombinator.com/item?id=25482856)!
+
 Musical Christmas Bells / Chimes
 ================================
 
@@ -32,7 +34,7 @@ Some videos of it working:
 - [Silent Night](https://youtu.be/6GucSdeh5fI)
 - [Hark! The Herald Angels Sing](https://youtu.be/q78rXuhWD9I)
 - [God Rest Ye Merry Gentlemen](https://youtu.be/Mc4dz5KQoJM)
-- [The user interface](https://www.youtube.com/watch?v=E3LkCAIgiEA) (OLED display)
+- [Close up of the user interface](https://www.youtube.com/watch?v=E3LkCAIgiEA) (OLED display)
 
 Overview
 --------
